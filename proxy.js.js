@@ -7,7 +7,7 @@ const cors = require('cors');
 console.log("=== Proxy server starting up! ===");
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 // CHANGE THIS to your current Google Apps Script Web App URL
 const SHEET_API = 'https://script.google.com/macros/s/AKfycbz8eEXpeO3c4BO-Fnu4rzPGRaQMeRDMNR1iXYHdt7o5D6RokookRHqqpMg0WQotTLeHzA/exec';
